@@ -1,7 +1,1 @@
-<dom-module id="app-user-index"><template><h2 class="page-title">Users</h2><p>This is the users section</p><p><a href="/users/Rob">Rob</a></p><p><a href="/users/Maria">Maria</a></p><p><a href="/users/Carl">Carl</a></p></template><script>
-  	(function() {
-	  Polymer({
-	    is: 'app-user-index'
-	  });
-	})();
-  </script></dom-module>
+<dom-module id="app-user-index"><template><h2 class="page-title">Users</h2><p>This is the users section</p><p><a href="/users/Rob">Rob</a></p><p><a href="/users/Maria">Maria</a></p><p><a href="/users/Carl">Carl</a></p><hr><p><b>Name:</b> <span>{{name}}</span></p><p><b>Lastname:</b> <span>{{lastname}}</span></p><template is="dom-repeat" items="{{users}}"><button class="btn btn-primary" on-click="clickBtn">{{item.name}}</button></template><button class="btn btn-primary" name="Pedro" lastname="Martinez" on-click="clickBtnTwo">Pedro</button></template><script src="app-user-index.js"></script></dom-module>
