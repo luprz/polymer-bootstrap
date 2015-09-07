@@ -1,1 +1,0 @@
-!function(e){"use strict";var n=e.querySelector("#app");n.displayInstalledToast=function(){e.querySelector("platinum-sw-cache").disabled||e.querySelector("#caching-complete").show()},n.addEventListener("dom-change",function(){}),window.addEventListener("WebComponentsReady",function(){}),n.scrollPageToTop=function(){e.getElementById("mainContainer").scrollTop=0}}(document);
