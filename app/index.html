@@ -70,11 +70,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           </section>
 
           <section data-route="users" class="container">
-            <app-user-index></app-user-index>
+            <app-user-index
+              name="Nombre..."
+              lastname="Apellido..."
+              users="{{users}}"
+            ></app-user-index>
           </section>
 
           <section data-route="user-info" class="container">
-            <app-user-show params="{{params}}"></app-user-show>
+            <app-user-show params="{{params}}" ></app-user-show>
           </section>
 
           <section data-route="contact" class="container">

@@ -12,6 +12,12 @@
     page('/users', function () {
       app.route = 'users';
       app.scrollPageToTop();
+      app.users = [
+        { name: "Rob", lastname: "Tompson" },
+        { name: "Maria", lastname: "James" },
+        { name: "Carl", lastname: "Stevens" },
+        { name: "Ken", lastname: "Robinson" }
+      ]
     });
 
     page('/users/:name', function (data) {
