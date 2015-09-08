@@ -66,15 +66,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
           <section data-route="home" class="container">
-            <app-home ></app-home>
+            <app-home></app-home>
           </section>
 
           <section data-route="users" class="container">
             <app-user-index
               name="Nombre..."
-              lastname="Apellido..."
-              users="{{users}}"
-            ></app-user-index>
+              lastname="Apellido...">
+            </app-user-index>
           </section>
 
           <section data-route="user-info" class="container">

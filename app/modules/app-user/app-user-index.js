@@ -3,12 +3,16 @@
     is: 'app-user-index',
     propierties: {
       name: String,
-      lastname: String,
-      users: Array
+      lastname: String
     },
 
     ready: function(){      
-
+      this.users = [
+        { name: "Rob", lastname: "Tompson" },
+        { name: "Maria", lastname: "James" },
+        { name: "Carl", lastname: "Stevens" },
+        { name: "Ken", lastname: "Robinson" }
+      ]
     },
     
     clickBtn: function(event){  
@@ -22,5 +26,6 @@
       this.name = person.name.value;
       this.lastname = person.lastname.value;
     }
+
   });
 })();
